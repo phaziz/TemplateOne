@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+	DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+	Version 1, December 2012
+	Copyright (C) 2012 Christian Becher | phaziz.com <christian@phaziz.com>
+	Everyone is permitted to copy and distribute verbatim or modified
+	copies of this license document, and changing it is allowed as long
+	as the name is changed.
+	DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+	TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+	0. You just DO WHAT THE FUCK YOU WANT TO.
+-->
+<!--[if lt IE 7]> 
+<html class="nojs ms lt_ie7" lang="de">
+<![endif]-->
+<!--[if IE 7]>    
+<html class="nojs ms ie7" lang="de">
+<![endif]-->
+<!--[if IE 8]>    
+<html class="nojs ms ie8" lang="de">
+<![endif]-->
+<!--[if gt IE 8]> 
+<html class="nojs ms" lang="de">
+<![endif]-->
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<title>Template One by phaziz.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <link rel="shortcut icon" href="assets/img/favicon.ico">
+  </head>
+  <body id="phaziz">
+    <header id="masthead" role="banner">
+        <h1><a href="http://phaziz.com/" data-original-title="Template One by Christian Becher | phaziz.com"><img src="http://static_files.phaziz.com/phaziz.png" alt="Christian Becher | phaziz.com"></a></h1>
+    </header>
+    <!-- TOP MENU NAVIGATION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <div class="nav-collapse collapse">
+                    <ul id="nav-list" class="nav pull-left">
+                        <li><a href="#" id="backward" class="tt" data-placement="bottom" data-original-title="prev"><i class="icon-fast-backward icon-white"></i></a></li>
+                        <li><a href="#" id="play" class="tt" data-placement="bottom" data-original-title="play"><i class="icon-play icon-white"></i></a></li>
+                        <li><a href="#" id="pause" class="tt" data-placement="bottom" data-original-title="pause"><i class="icon-pause icon-white"></i></a></li>
+                        <li><a href="#" id="forward" class="tt" data-placement="bottom" data-original-title="next"><i class="icon-fast-forward icon-white"></i></a></li>
+                        <li><a href="#" id="fullscreen" class="tt" data-placement="bottom" data-original-title="fullscreen"><i class="icon-resize-full icon-white"></i></a></li>
+                        <li><a href="#modal" id="refreshr" class="second tt" data-placement="bottom" data-original-title="imprint"><i class="icon-plus-sign icon-white"></i></a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="modal" class="span3" style="display:none">
+        <p class="center"><a href="http://www.phaziz.com/"><img src="http://static_files.phaziz.com/phaziz.png" alt="Christian Becher | phaziz.com"></a></p>
+        <h5 class="center">Template One by Christian Becher | phaziz.com</h5>
+        <p class="center"><button id="close" class="btn btn-inverse btn-mini" type="button">close</button><br><br><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fphaziz.com%2F" onclick="window.open(this.href);return false;"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="23" height="24" alt="HTML5 Powered"></a></p>
+    </div>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.backstretch.min.js"></script>
+    <script src="./assets/js/jquery.pageslide.min.js"></script>
+    <script>
+    $(function() {
+        $('.tt').tooltip();
+        $("#fullscreen").click(function(){var element=document.getElementById("phaziz");if(element.requestFullScreen){if(!document.fullScreen){element.requestFullscreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.exitFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.mozRequestFullScreen){if(!document.mozFullScreen){element.mozRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.mozCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.webkitRequestFullScreen){if(!document.webkitIsFullScreen){element.webkitRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.webkitCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}}}return false});
+        var images = [
+            'http://blog.phaziz.com/wp-content/uploads/tumblr_lrev9txP4S1qe0quko1_r1_12801.png',
+            'http://blog.phaziz.com/wp-content/uploads/Bildschirmfoto-2012-09-10-um-20.51.591.jpg',
+            'http://blog.phaziz.com/wp-content/uploads/tumblr_lr1sul4v221qe0quko1_1280.jpg',
+            'http://blog.phaziz.com/wp-content/uploads/bb0af1b0296349bf0526b614434dbd6e.jpg',
+            'http://blog.phaziz.com/wp-content/uploads/tumblr_lr3poxD80m1qe0quko1_1280.jpg',
+            'http://blog.phaziz.com/wp-content/uploads/f1c4eb574634de64986426354f9b1148.jpg',
+            'http://blog.phaziz.com/wp-content/uploads/cd8a2ba126c6f9864e3d29a994398c51.jpg',
+        ];
+        var slideshow = $.backstretch(images,{duration:2500,fade:750});
+        $("#pause").click(function(e){e.preventDefault();slideshow.pause();});
+        $("#play").click(function(e){e.preventDefault();slideshow.resume();});
+        $("#forward").click(function(e){e.preventDefault();slideshow.next();});
+        $("#backward").click(function(e){e.preventDefault();slideshow.prev();});
+        $(".second").pageslide({ direction: 'left', modal:true});
+        $('#close').click(function(){
+            parent.$.pageslide.close();
+        });
+    });
+    </script>
+  </body>
+</html>
