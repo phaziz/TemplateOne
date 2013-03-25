@@ -75,13 +75,10 @@
         $('.tt').tooltip();
         $("#fullscreen").click(function(){var element=document.getElementById("phaziz");if(element.requestFullScreen){if(!document.fullScreen){element.requestFullscreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.exitFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.mozRequestFullScreen){if(!document.mozFullScreen){element.mozRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.mozCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.webkitRequestFullScreen){if(!document.webkitIsFullScreen){element.webkitRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.webkitCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}}}return false});
         var images = [
-            'http://blog.phaziz.com/wp-content/uploads/tumblr_lrev9txP4S1qe0quko1_r1_12801.png',
-            'http://blog.phaziz.com/wp-content/uploads/Bildschirmfoto-2012-09-10-um-20.51.591.jpg',
-            'http://blog.phaziz.com/wp-content/uploads/tumblr_lr1sul4v221qe0quko1_1280.jpg',
-            'http://blog.phaziz.com/wp-content/uploads/bb0af1b0296349bf0526b614434dbd6e.jpg',
-            'http://blog.phaziz.com/wp-content/uploads/tumblr_lr3poxD80m1qe0quko1_1280.jpg',
-            'http://blog.phaziz.com/wp-content/uploads/f1c4eb574634de64986426354f9b1148.jpg',
-            'http://blog.phaziz.com/wp-content/uploads/cd8a2ba126c6f9864e3d29a994398c51.jpg',
+            'http://blog.phaziz.com/content/327',
+            'http://blog.phaziz.com/storage/cache/images/000/132/Bildschirmfoto-2012-09-10-um-18.55.53,huge.jpg?1363092245',
+            'http://blog.phaziz.com/storage/cache/images/000/136/Bildschirmfoto-2012-09-10-um-20.06.50,huge.jpg?1363092438',
+            'http://blog.phaziz.com/storage/cache/images/000/235/60cb216965644ae54a7315fa3eaf10a8,huge.jpg?1363165801'
         ];
         var slideshow = $.backstretch(images,{duration:2500,fade:750});
         $("#pause").click(function(e){e.preventDefault();slideshow.pause();});
