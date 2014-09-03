@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <!--
-	DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-	Version 1, December 2012
-	Copyright (C) 2012 Christian Becher | phaziz.com <christian@phaziz.com>
-	Everyone is permitted to copy and distribute verbatim or modified
-	copies of this license document, and changing it is allowed as long
-	as the name is changed.
-	DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-	TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-	0. You just DO WHAT THE FUCK YOU WANT TO.
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+    Version 1, December 2012
+    Copyright (C) 2012 Christian Becher | phaziz.com <christian@phaziz.com>
+    Everyone is permitted to copy and distribute verbatim or modified
+    copies of this license document, and changing it is allowed as long
+    as the name is changed.
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+    0. You just DO WHAT THE FUCK YOU WANT TO.
 -->
-<!--[if lt IE 7]> 
+<!--[if lt IE 7]>
 <html class="nojs ms lt_ie7" lang="de">
 <![endif]-->
-<!--[if IE 7]>    
+<!--[if IE 7]>
 <html class="nojs ms ie7" lang="de">
 <![endif]-->
-<!--[if IE 8]>    
+<!--[if IE 8]>
 <html class="nojs ms ie8" lang="de">
 <![endif]-->
-<!--[if gt IE 8]> 
+<!--[if gt IE 8]>
 <html class="nojs ms" lang="de">
 <![endif]-->
 <html lang="de">
   <head>
     <meta charset="utf-8">
-	<title>Template One by phaziz.com</title>
+    <title>Template One by phaziz.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -75,9 +75,9 @@
         $('.tt').tooltip();
         $("#fullscreen").click(function(){var element=document.getElementById("phaziz");if(element.requestFullScreen){if(!document.fullScreen){element.requestFullscreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.exitFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.mozRequestFullScreen){if(!document.mozFullScreen){element.mozRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.mozCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}else{if(element.webkitRequestFullScreen){if(!document.webkitIsFullScreen){element.webkitRequestFullScreen();$("#fullscreen").html('<i class="icon-resize-small icon-white"></i>')}else{document.webkitCancelFullScreen();$("#fullscreen").html('<i class="icon-resize-full icon-white"></i>')}}}}return false});
         var images = [
-            'http://blog.phaziz.com/storage/cache/images/000/132/Bildschirmfoto-2012-09-10-um-18.55.53,huge.jpg',
-            'http://blog.phaziz.com/storage/cache/images/000/136/Bildschirmfoto-2012-09-10-um-20.06.50,huge.jpg',
-            'http://blog.phaziz.com/storage/cache/images/000/235/60cb216965644ae54a7315fa3eaf10a8,huge.jpg'
+            'http://staic_files.phaziz.com/background.jpg',
+            'http://staic_files.phaziz.com/chair.jpg',
+            'http://staic_files.phaziz.com/sun.jpg',
         ];
         var slideshow = $.backstretch(images,{duration:2500,fade:750});
         $("#pause").click(function(e){e.preventDefault();slideshow.pause();});
